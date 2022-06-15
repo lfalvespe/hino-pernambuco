@@ -1,10 +1,23 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'brazie';
+	src: url('../fontes/BRAZIE.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'elissta';
+	src: url('../fontes/Stonedance\ Elissta.ttf') format('truetype');
+}
+
 :root {
 	--cor1: #146A61;
 	--cor2: #F3C97F;
 	--cor3: #B8653D;
 	--cor4: #484349;
+
+	--font-destaque: 'brazie', 'cursive';
+	--font-destaque2: 'elissta', 'cursive'
 }
 
 * {
@@ -13,6 +26,7 @@
 }
 
 body {
+	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	height: 100vh;
@@ -21,14 +35,103 @@ body {
 header {
 	background-color: var(--cor1);
 	text-align: center;
+	font-style: normal;
 }
 
 header h1 {
+	font-family: var(--font-destaque);
+	font-size: 8vw;
 	color: white;
 	padding: 30px;
+	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.384);
 }
 
 header p {
+	font-size: 3.3vw;
 	color: var(--cor2);
 	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.329);
+}
+
+aside {
+	margin: 10px;
+	border-radius: 20px;
+	background-color: var(--cor3);
+	color: white;
+	padding: 20px;
+	font-size: 3vw;
+	text-indent: 20px;
+	text-align: justify;
+	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.459);
+}
+
+main {
+	background-color: var(--cor2);
+}
+
+main h2 {
+	font-size: 3.3vw;
+	padding: 20px;
+	font-family: var(--font-destaque2);
+	font-style: normal;
+	color: var(--cor1);
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+}
+
+section {
+	font-size: 2.8vw;
+	padding-top: 70px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+section p {
+	padding-bottom: 50px;
+}
+
+section.normal {
+	background-color: white;
+	color: var(--cor4);
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px var(--cor2);
+}
+
+section.img {
+	background-position: right, center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801);
+	font-weight: bolder;
+}
+
+section.img#fundo1 {
+	background-image: url('../imagens/AdobeStock_312656777_Preview.jpeg');
+}
+
+section.img#fundo2 {
+	background-image: url('../imagens/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil.jpg');
+}
+
+footer {
+	background-color: #19181a;
+	color: white;
+	font-size: 2.3vw;
+	text-align: center;
+	padding: 15px;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--cor2);
+	font-weight: bolder;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
