@@ -10,6 +10,11 @@
 	src: url('../fontes/Stonedance\ Elissta.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'script';
+	src: url('../fontes/Burtons\ Script.otf') format('opentype');
+}
+
 :root {
 	--cor1: #146A61;
 	--cor2: #F3C97F;
@@ -17,7 +22,8 @@
 	--cor4: #484349;
 
 	--font-destaque: 'brazie', 'cursive';
-	--font-destaque2: 'elissta', 'cursive'
+	--font-destaque2: 'elissta', 'cursive';
+	--font-corpo: 'script', 'cursive';
 }
 
 * {
@@ -29,7 +35,7 @@ body {
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 header {
@@ -42,6 +48,7 @@ header {
 header h1 {
 	font-family: var(--font-destaque);
 	font-size: 8vw;
+	font-variant: small-caps;
 	color: white;
 	padding: 30px;
 	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.384);
@@ -54,6 +61,8 @@ header p {
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: justify;
+	font-style: italic;
+	text-indent: 0px;
 	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.329);
 }
 
@@ -81,27 +90,30 @@ main h2 {
 	padding: 15px;
 	font-family: var(--font-destaque2);
 	font-style: normal;
+	font-variant: small-caps;
 	color: var(--cor1);
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
 }
 
 section {
-	font-size: 2.8vw;
-	padding-top: 70px;
+	font-family: var(--font-corpo);
+	font-size: 4vw;
+	font-weight: bolder;
+	padding-top: 50px;
 	padding-left: 20px;
 	padding-bottom: 20px;
 	text-align: justify;
+	line-height: 1.5em;
 }
 
-section p {
-	padding-bottom: 50px;
-}
+
 
 section.normal {
 	background-color: white;
-	color: var(--cor4);
+	color: #2c292c;
 	font-weight: bolder;
-	text-shadow: 1px 1px 1px var(--cor2);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+	padding-bottom: 60px;
 }
 
 section.img {
@@ -109,9 +121,15 @@ section.img {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	color: white;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801);
+	color:rgb(233, 224, 211);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.719);
 	font-weight: bolder;
+}
+
+section.img > p {
+	background-color: #19181a6c;
+	width: 52vw;
+	padding: 10px;
 }
 
 section.img#fundo1 {
@@ -120,6 +138,7 @@ section.img#fundo1 {
 
 section.img#fundo2 {
 	background-image: url('../imagens/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil.jpg');
+	margin-bottom: 70px;
 }
 
 footer {
