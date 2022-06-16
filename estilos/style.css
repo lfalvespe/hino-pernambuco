@@ -70,6 +70,7 @@ header p {
 
 header img {
 	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(2, 2, 5, 0.384)
 }
 
 aside {
