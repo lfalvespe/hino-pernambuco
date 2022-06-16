@@ -70,6 +70,7 @@ header p {
 
 header img {
 	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384)
 }
 
 aside {
@@ -100,6 +101,7 @@ main h2 {
 	font-style: normal;
 	font-weight: normal;
 	font-variant: small-caps;
+	text-align: center;
 	color: var(--cor1);
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
 }
