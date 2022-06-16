@@ -11,8 +11,8 @@
 }
 
 @font-face {
-	font-family: 'script';
-	src: url('../fontes/Burtons\ Script.otf') format('opentype');
+	font-family: 'burtons';
+	src: url('../fontes/Burtons.otf') format('opentype');
 }
 
 :root {
@@ -23,7 +23,7 @@
 
 	--font-destaque: 'brazie', 'cursive';
 	--font-destaque2: 'elissta', 'cursive';
-	--font-corpo: 'script', 'cursive';
+	--font-corpo: 'burtons', 'cursive';
 }
 
 * {
@@ -45,18 +45,20 @@ header {
 	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.39);
 }
 
+
 header h1 {
 	font-family: var(--font-destaque);
 	font-size: 8vw;
 	font-variant: small-caps;
 	color: white;
-	padding: 30px;
+	padding-top: 30px;
 	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.384);
 }
 
 header p {
 	font-size: 3.0vw;
 	color: var(--cor2);
+	padding-top: 15px;
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -68,7 +70,8 @@ header p {
 
 aside {
 	margin-top: 30px;
-	margin-left: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 	border-radius: 20px;
 	background-color: var(--cor3);
 	color: white;
@@ -81,7 +84,8 @@ aside {
 }
 
 main {
-	background-color: var(--cor2);
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 
 main h2 {
@@ -90,23 +94,28 @@ main h2 {
 	padding: 15px;
 	font-family: var(--font-destaque2);
 	font-style: normal;
+	font-weight: normal;
 	font-variant: small-caps;
 	color: var(--cor1);
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
 }
 
-section {
-	font-family: var(--font-corpo);
-	font-size: 4vw;
-	font-weight: bolder;
-	padding-top: 50px;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	text-align: justify;
-	line-height: 1.5em;
+h2#letra {
+	background-image: url('../imagens/fundo-papel.jpeg');
+	border-radius: 20px;
 }
 
-
+section {
+	font-family: var(--font-corpo);
+	font-size: 3.5vw;
+	font-weight: bolder;
+	padding-top: 10vh;
+	padding-left: 20px;
+	padding-bottom: 10vh;
+	text-align: justify;
+	line-height: 1.5em;
+	border-radius: 20px;
+}
 
 section.normal {
 	background-color: white;
@@ -141,12 +150,41 @@ section.img#fundo2 {
 	margin-bottom: 70px;
 }
 
+
+div.video {
+	
+    background-color: black;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+	margin-bottom: 70px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h2#audio {
+	background-color: var(--cor4);
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+	padding: 8px;
+	border-radius: 20px 20px 0px 0px;
+}
+
 footer {
 	background-color: #19181a;
 	color: white;
 	font-size: 2.3vw;
 	text-align: center;
 	padding: 15px;
+	
 }
 
 footer a {
