@@ -51,21 +51,25 @@ header h1 {
 	font-size: 8vw;
 	font-variant: small-caps;
 	color: white;
-	padding-top: 30px;
+	padding-top: 20px;
 	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.384);
 }
 
 header p {
 	font-size: 3.0vw;
 	color: var(--cor2);
-	padding-top: 15px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: justify;
 	font-style: italic;
 	text-indent: 0px;
 	text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.329);
+}
+
+header img {
+	border-radius: 10px;
 }
 
 aside {
